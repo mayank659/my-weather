@@ -63,7 +63,7 @@ export default function App() {
         <div style={real}>  
            { weather && <Humidity main={main} Humidity={humidity}/> }
 
-        <div style={main}>
+        <div style={main} className='card'>
                    {/* search */}
           <div className="search" style={search}>
             <input type="text" placeholder="Enter city name..." style={input} value={city} onChange={(e) => setCity(e.target.value)} onKeyDown={(e) =>{if(e.key==='Enter'){getWeather();}}}/>
